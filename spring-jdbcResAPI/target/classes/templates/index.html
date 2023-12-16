@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns=http://www.w3.org/1999/xhtml
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Arduino and ESP32 Websocket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <meta charset='UTF-8'>
+    <style> body { background-color: #E6D8D5; text-align: center; } </style>
+</head>
+<body>
+<h1>Temperature: <span id='tempValue'>-</span></h1>
+
+<h1>Humidity: <span id='hum'>-</span></h1>
+<h1>Received message: <span id='message'>-</span></h1>
+<button type='button' id='BTN_1'> <h1>ON</h1> </button>
+<button type='button' id='BTN_2'> <h1>OFF</h1> </button>
+
+<script th:inline="javascript">
+    function updateTemperature(newTemp) {
+        document.getElementById('tempValue').innerText = newTemp;
+    }
+
+    function fetchData() {
+        // Sử dụng AJAX để gửi yêu cầu lấy dữ liệu mới từ máy chủ
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/api/mqtt/subscribe?topic=/PTIT_Test/p/temp&wait_millis=2000', true);
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                // Xử lý dữ liệu nhận được từ máy chủ
+                var newData = JSON.parse(xhr.responseText);
+                updateTemperature(newData[newData.length - 1].message);
+            }
+        };
+
+        xhr.send();
+    }
+
+    // Định kỳ gọi fetchData để cập nhật dữ liệu
+    setInterval(fetchData, 2000); // Cập nhật mỗi 2 giây (điều chỉnh theo nhu cầu của bạn)
+</script>
+
+</body>
+</html>

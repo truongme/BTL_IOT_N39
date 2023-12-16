@@ -1,0 +1,70 @@
+@import url('/src/index.css');
+
+.header_setting{
+    color: var(--color-blue);
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 30px;
+}
+
+.setting_ctn{
+    margin: 30px;
+    background-color: var(--color-light-blue);
+    width: 40vw;
+    border-radius: 15px;
+}
+
+.threshold_ctn{
+    padding: 10px 40px;
+}
+
+.title{
+    font-size: 15px;
+    color: var(--color-blue);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.threshold_value{
+    margin: 20px 0px;
+    height: 5px;
+    width: 300px;
+    background-color: var(--color-blue);
+}
+
+button{
+    background-color: var(--color-red);
+    color: var(--color-white);
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 10px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: var(--color-white);
+    color: var(--color-red);
+}
+
+.button_ctn{
+    background-color: var(--color-light-blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    width: 40vw;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.threshold_ctn input{
+    color: var(--color-blue);
+    font-size: 15px;
+    font-weight: bold;
+}

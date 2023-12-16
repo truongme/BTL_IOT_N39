@@ -1,0 +1,6 @@
+@import url(/src/index.css);
+.home_ctn{
+    background-color: var(--color-white);
+    display: flex;
+    height: 100vh;
+}

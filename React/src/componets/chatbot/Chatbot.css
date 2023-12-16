@@ -1,0 +1,43 @@
+@import url('/src/index.css');
+
+.chatbox_ctn{
+    background-color: var(--color-light-blue);
+    width: 100%;
+}
+
+.header_ctn{
+    width: 30VW;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-blue);
+}
+
+.header_ctn p{
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.notification{
+    background-color: var(--color-white);
+    margin: 15px 30px;
+    padding: 10px;
+    color: var(--color-blue);
+    border-radius: 10px;
+}
+
+.time-ctn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.time{
+    color: var(--color-blue);
+    font-weight: bold;
+}

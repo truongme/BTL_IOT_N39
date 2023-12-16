@@ -1,0 +1,98 @@
+@import url(/src/index.css);
+
+.account_ctn{
+    margin: 40px;
+    width: 80vw;
+}
+
+.h1_acc{
+    color: var(--color-blue);
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+/* styles.css */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 2px solid var(--color-light-blue);
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+tr{
+    color: var(--color-blue);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    height: 60px;
+}
+
+tr:hover{
+    background-color: var(--color-light-blue);
+    color: var(--color-white);
+}
+
+tr:nth-child(even) {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+tr:nth-child(even):hover {
+    background-color: var(--color-light-blue);
+    color: var(--color-blue);
+}
+
+
+.search{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.search label{
+    margin: 0;
+    width: 250px;
+    color: var(--color-blue);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.search input{
+    margin: 0;
+    border: 2px solid var(--color-light-blue);
+    border-radius: 10px;
+    color: var(--color-blue);
+    font-size: 15px;
+}
+
+.button_ctn_acc{
+    width: 500px;
+}
+
+.select{
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: var(--color-blue);
+    border: 2px solid var(--color-light-blue);
+}

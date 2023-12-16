@@ -1,0 +1,34 @@
+@import url('/src/index.css');
+
+.login_ctn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-white);
+}
+
+.login_form{
+    background-color: var(--color-blue);
+    width: 30vw;
+    height: 50vh;
+    border-radius: 15px;
+    color: var(--color-white);
+}
+
+.header_login{
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    margin: 10px 40px;
+    font-size: 20px;
+}
+
+input{
+    width: 80%;
+    height: 30px;
+    margin: 10px 40px;
+}
